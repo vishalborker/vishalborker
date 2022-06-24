@@ -6,9 +6,37 @@ import Home from './Home';
 import './Navbar.scss';
 
 import Logo from '../images/vb.png';
+import NavLinks from './NavLinks';
 
 function Navbar() {
   const brandTitle = "Vishal";
+  const Links = [
+      {
+          to: '/',
+          component: <Home />,
+          title: 'Home'
+      },
+      {
+        to: '/About',
+        component: <Home />,
+        title: 'About'
+      },
+      {
+        to: '/Skills',
+        component: <Home />,
+        title: 'Skills'
+      },
+      {
+        to: '/Services',
+        component: <Home />,
+        title: 'Services'
+      },
+      {
+        to: '/Contact',
+        component: <Home />,
+        title: 'Contact'
+      }
+  ]
   return (
     <nav role="navigation" className="navigation">
         <div className='logo'>
@@ -17,25 +45,7 @@ function Navbar() {
               {brandTitle}
             </NavLink></h4>
         </div>
-        <div className='links'>
-            <ul>
-                <li>
-                    <NavLink to={'/'} element={<Home />}>Home</NavLink>
-                </li>
-                <li>
-                    <NavLink to={'/About'} element={<Home />}>About</NavLink>
-                </li>
-                <li>
-                    <NavLink to={'/Skills'} element={<Home />}>Skills</NavLink>
-                </li>
-                <li>
-                    <NavLink to={'/Services'} element={<Home />}>Services</NavLink>
-                </li>
-                <li>
-                    <NavLink to={'/Contact'} element={<Home />}>Contact</NavLink>
-                </li>
-            </ul>
-        </div>
+        <NavLinks links={Links} />
     </nav>
   )
 }

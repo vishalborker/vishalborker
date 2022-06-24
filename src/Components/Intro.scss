@@ -47,11 +47,8 @@ article.intro {
         span {
             position: relative;
             cursor: pointer;
-            transition: bottom 100ms ease-in-out;
-            &:hover {
-                bottom: 0.25rem
-            }
         }
+        
         span:nth-child(1){
             animation: bounce 200ms forwards 2000ms;
         }
