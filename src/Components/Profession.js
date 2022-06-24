@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function Professional() {
+function Profession() {
   const profession = ["Software Engineer", "Web Designer", "Professional Coder"];
 
   const [whichProfession, setWhichProfession] = useState(0);
@@ -13,7 +13,7 @@ function Professional() {
         else {
             return curr + 1;
         }
-    }), 4000);
+    }), 3000);
 
     return () => {
         clearInterval(interval);
@@ -34,4 +34,4 @@ function Professional() {
   )
 }
 
-export default Professional
+export default Profession;

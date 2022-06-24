@@ -12,9 +12,9 @@ function Navbar() {
   const brandTitle = "Vishal";
   const Links = [
       {
-          to: '/',
-          component: <Home />,
-          title: 'Home'
+        to: '/',
+        component: <Home />,
+        title: 'Home'
       },
       {
         to: '/About',
@@ -36,7 +36,8 @@ function Navbar() {
         component: <Home />,
         title: 'Contact'
       }
-  ]
+  ];
+
   return (
     <nav role="navigation" className="navigation">
         <div className='logo'>

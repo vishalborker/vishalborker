@@ -3,7 +3,7 @@ import React from 'react';
 import profileImg from '../images/profile-pic.png';
 
 import './Intro.scss';
-import Professional from './Professional';
+import Profession from './Profession';
 import Social from './Social';
 
 
@@ -22,7 +22,7 @@ function Intro() {
                   </b>
               </p>
               <p className='profession'>I'm a &nbsp;
-                  <Professional />
+                  <Profession />
               </p>
               
               <div className='social'>

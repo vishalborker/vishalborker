@@ -1,12 +1,27 @@
 .social {
     display: flex;
-    width: 4rem;
+    width: 6rem;
     justify-content: space-between;
+    position: relative;
+    opacity: 0;
+    animation: moveInRight 300ms forwards 1500ms;
 
     a {
       img {
-          height: 30px;
-          height: 30px;
+          height: 25px;
+          height: 25px;
       }
     }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    left: 6rem;
+  }
+
+  100% {
+    opacity: 1;
+    left: 0rem;
+  }
 }

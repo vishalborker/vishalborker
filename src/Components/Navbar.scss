@@ -50,20 +50,19 @@ nav {
             justify-content: space-between;
 
             li {
-                a {
-                    color: variables.$link-text-color-inactive;
-                    font-weight: 400;
+                button {
+                    cursor: pointer;
+                    background: transparent;
+                    border: none;
+                    color: variables.$black;
+                    font-weight: 200;
                     font-size: 0.8rem;
                     display: inline-block;
                     min-width: 50px;
                     transition: all 100ms ease-in-out;
-                    &:hover {
-                        color: variables.$link-text-color-inactive;
+                    &:hover, &:active {
+                        color: variables.$link-text-color-active;
                         font-weight: 500;
-                    }
-
-                    &:active {
-                        text-decoration: underline;
                     }
                 }
             }

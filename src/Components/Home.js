@@ -10,6 +10,11 @@ function Home() {
     <>
       <Navbar />
       <Profile />
+
+      {/* <Profile />
+
+      <Profile /> */}
+
       {/* <Footer /> */}
     </>
   )
