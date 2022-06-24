@@ -5,12 +5,17 @@ import Home from './Home';
 
 import './Navbar.scss';
 
+import Logo from '../images/vb.png';
+
 function Navbar() {
   const brandTitle = "Vishal";
   return (
     <nav role="navigation" className="navigation">
         <div className='logo'>
-            <h4><NavLink to={'/'}>{brandTitle}</NavLink></h4>
+            <h4><NavLink to={'/'}>
+              <img src={Logo} alt='VB' />
+              {brandTitle}
+            </NavLink></h4>
         </div>
         <div className='links'>
             <ul>
