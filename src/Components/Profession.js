@@ -13,7 +13,7 @@ function Profession() {
         else {
             return curr + 1;
         }
-    }), 3000);
+    }), 5000);
 
     return () => {
         clearInterval(interval);

@@ -1,13 +1,22 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 
-function NavLinks({ links }) {
+function NavLinks({ links, onNavigate }) {
+ 
+  const [active, setActive] = useState(0);
+  
+
+  const handleActive = (link, index) => {
+      setActive(index);
+      onNavigate(link);
+  }
+
+  console.log({active})
   return (
     <div className='links'>
         <ul>
             {
                 links.map((link, index) => (
-                <li key={index}>
+                <li key={index} onClick={() => handleActive(link, index)} className={`${active === index ? 'active' : ''} `}>
                     <button>{link.title}</button>
                 </li>
                 ))

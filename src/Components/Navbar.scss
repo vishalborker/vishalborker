@@ -50,12 +50,15 @@ nav {
             justify-content: space-between;
 
             li {
+                &.active > button {
+                    color: variables.$link-text-color-active;
+                }
                 button {
                     cursor: pointer;
                     background: transparent;
                     border: none;
                     color: variables.$black;
-                    font-weight: 200;
+                    font-weight: 400;
                     font-size: 0.8rem;
                     display: inline-block;
                     min-width: 50px;
