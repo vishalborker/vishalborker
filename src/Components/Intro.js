@@ -21,7 +21,7 @@ function Intro() {
                       }
                   </b>
               </p>
-              <p className='profession'>I'm a &nbsp;
+              <p className='profession'>I'm a&nbsp;
                   <Profession />
               </p>
               

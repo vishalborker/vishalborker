@@ -1,65 +1,12 @@
-@use '../scss/variables';
+@use '../../scss/variables';
 
 section.contact {
     padding: 5rem 12rem;
-    padding-bottom: 5rem;
-
-    .header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 2rem;
-
-        h5 {
-            font-size: 1.5rem;
-        }
-
-        h6 {
-            font-size: 1rem;
-            color: rgba(0, 0, 0, 0.6);
-            font-weight: 400;
-        }
-    }
 
     .contact-data {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-
-        .contact-details {
-            width: 20%;
-            .callme, .email, .location {
-                display: flex;
-                align-items: center;
-                margin-bottom: 1rem;
-
-                svg {
-                    color: variables.$link-text-color-active;
-                    font-size: 1.5rem;
-                    min-width: 2rem;
-                }
-            }
-
-
-            .location-address, .email-address, .phone-no {
-                display: flex;
-                flex-direction: column;
-                margin-left: 2rem;
-
-
-                span:first-of-type {
-                    font-size: 1.25rem;
-                    font-weight: 500;
-                    margin-bottom: 0.5rem;
-                }
-
-                span:last-of-type {
-                    font-size: 0.75rem;
-                    font-weight: 400;
-                }
-            }
-        }
     }
 
     .contact-form {
@@ -130,7 +77,4 @@ section.contact {
             }
         }
     }
-    
-
-
 }

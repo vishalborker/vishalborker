@@ -2,6 +2,8 @@ import React from 'react';
 import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import './ContactDetails.scss';
+
 function ContactDetails() {
   return (
     <article className='contact-details'>

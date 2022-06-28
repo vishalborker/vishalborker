@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    h5 {
+        color: rgba(0,0,0, 1);
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    h6 {
+        color: rgba(0,0,0, 0.6);
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+}

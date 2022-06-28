@@ -1,0 +1,35 @@
+@use '../../scss/variables';
+
+.contact-details {
+    width: 20%;
+    .callme, .email, .location {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        svg {
+            color: variables.$link-text-color-active;
+            font-size: 1.5rem;
+            min-width: 2rem;
+        }
+    }
+
+
+    .location-address, .email-address, .phone-no {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+
+
+        span:first-of-type {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        span:last-of-type {
+            font-size: 0.75rem;
+            font-weight: 400;
+        }
+    }
+}

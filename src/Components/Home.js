@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
-import Contact from './Contact';
+import Contact from './Contact/Contact';
 
 import Footer from './Footer';
 import Navbar from './Navbar';
 import Profile from './Profile';
+import Services from './Services/Services';
 
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
     <>
       <Navbar />
       <Profile />
+      <Services />
       <Contact />
       {/* <Footer /> */}
     </>

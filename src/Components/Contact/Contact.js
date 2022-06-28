@@ -1,17 +1,21 @@
 import React from 'react';
 import ContactDetails from './ContactDetails';
 import ContactForm from './ContactForm';
+import Header from '../Header';
 
 import './Contact.scss';
 
 function Contact() {
+  
+  const title = {
+    title: 'Contact Me',
+    subtitle: 'Get in touch', 
+  };
+
   return (
     <section className='contact'>
         <article className='contact-article'>
-            <div className='header'>
-                <h5>Contact Me</h5>
-                <h6>Get in Touch</h6>
-            </div>
+            <Header title={title.title} subtitle={title.subtitle} />
             <div className='contact-data'>
                 <ContactDetails />
                 <ContactForm />
