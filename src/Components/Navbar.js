@@ -85,21 +85,11 @@ function Navbar() {
   }
 
   const onNavigate = (link) => {
-    // console.log({link});
-
-    let pos = null; 
-    if(link.order - activeLink > 0 ) {
-        pos = true;
-    } else {
-        pos = false;
-    }
-
-    if (pos !== null) {
-        setActiveLink(link.order);
-        const element = document.querySelector(`.${link.class}`);
-        const domRect = element.getBoundingClientRect();
-        smoothScroll(0, domRect.y - (5*16));
-    }
+    console.log({link});
+    setActiveLink(link.order);
+    const element = document.querySelector(`.${link.class}`);
+    const offsetTop = element.offsetTop;
+    smoothScroll(0, offsetTop);
   }
 
 
