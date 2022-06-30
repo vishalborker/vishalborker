@@ -4,6 +4,7 @@ function NavLinks({ links, onNavigate }) {
  
   const [active, setActive] = useState(0);
   
+  console.log({links});
 
   const handleActive = (link, index) => {
       setActive(index);

@@ -2,6 +2,7 @@
 
 nav {
     &.navigation {
+        user-select: none;
         padding: 0 8rem;
         width: 100%;
         display: flex;
@@ -68,6 +69,22 @@ nav {
                         font-weight: 500;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav.navigation {
+        padding: 0rem 0.5rem;
+        justify-content: flex-start;
+    }
+
+    nav {
+        .links {
+            width: 100%;
+            ul {
+                justify-content: flex-end;
             }
         }
     }

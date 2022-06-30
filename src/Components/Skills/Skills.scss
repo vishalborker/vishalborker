@@ -1,0 +1,44 @@
+@use '../../scss/variables';
+
+section.skills {
+    padding: 9rem 12rem;
+    padding-bottom: 10rem;
+
+    .skills-data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .skills-article {
+        .carousel {
+            .carousel-header {
+
+            }
+
+            .carousel-body {
+                .skills {
+                    .progress {
+                        position: relative;
+                        width: 100%;
+                        height: 10px;
+                        background-color: variables.$link-text-color-inactive;
+                        border-radius: 25px;
+
+                        .progress-percentage {
+                            position: absolute;
+                            content: '';
+                            border-radius: 25px;
+                            width: 60%;
+                            background-color: variables.$link-text-color-active;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                        }
+                    }
+                }   
+            }
+        }
+    }
+}

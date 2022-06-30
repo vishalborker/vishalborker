@@ -78,3 +78,30 @@ section.contact {
         }
     }
 }
+
+
+@media screen and (max-width: 480px) {
+    section.contact {
+        padding: 5rem 1rem;
+    
+        .contact-article {
+            .header {
+                margin-bottom: 4rem;
+            }
+            .contact-data {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                .contact-details {
+                    width: 100%;
+                }
+
+                .contact-form {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

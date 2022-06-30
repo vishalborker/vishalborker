@@ -1,54 +1,16 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import Home from './Home';
-
 import './Navbar.scss';
 
 import Logo from '../images/vb.png';
 import NavLinks from './NavLinks';
+import { LINKS } from '../Constants/NavLinks';
 
 function Navbar() {
   const brandTitle = "Vishal";
   const [activeLink, setActiveLink] = useState(1);
-  const Links = [
-      {
-        to: '/',
-        component: <Home />,
-        title: 'Home',
-        class: 'profile',
-        order: 1,
-      },
-      {
-        to: '/About',
-        component: <Home />,
-        title: 'About',
-        class: 'about',
-        order: 2,
-      },
-      {
-        to: '/Skills',
-        component: <Home />,
-        title: 'Skills',
-        class: 'skills',
-        order: 3,
-      },
-      {
-        to: '/Services',
-        component: <Home />,
-        title: 'Services',
-        class: 'services',
-        order: 4,
-      },
-      {
-        to: '/Contact',
-        component: <Home />,
-        title: 'Contact',
-        class: 'contact',
-        order: 5,
-      }
-  ];
-
+  const links = LINKS;
 
   const smoothScroll = (width, destinationY, positive) => {
     const isGoingUp = destinationY - window.scrollY < 0;
@@ -85,10 +47,9 @@ function Navbar() {
   }
 
   const onNavigate = (link) => {
-    console.log({link});
     setActiveLink(link.order);
     const element = document.querySelector(`.${link.class}`);
-    const offsetTop = element.offsetTop;
+    const offsetTop = element && element.offsetTop;
     smoothScroll(0, offsetTop);
   }
 
@@ -101,7 +62,7 @@ function Navbar() {
               {brandTitle}
             </NavLink></h4>
         </div>
-        <NavLinks links={Links} onNavigate={onNavigate}/>
+        <NavLinks links={links} onNavigate={onNavigate}/>
     </nav>
   )
 }

@@ -9,7 +9,7 @@ import './Services.scss';
 function Services() {
   const title = {
     title: 'Services'   ,
-    subtitle: `What I'm good at`,
+    subtitle: `What I can help with`,
   }
 
   return (
