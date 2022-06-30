@@ -2,6 +2,7 @@
 
 .contact-details {
     width: 20%;
+
     .callme, .email, .location {
         display: flex;
         align-items: center;
@@ -37,5 +38,7 @@
 @media screen and (max-width: 480px) {
     .contact-details {
         margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
     }
 }

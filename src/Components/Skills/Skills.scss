@@ -26,6 +26,10 @@ section.skills {
                     cursor: pointer;
 
                     .carousel-button {
+                        transition: transform 300ms ease-in-out;
+                        &.close {
+                            transform: rotate(180deg);
+                        }
                         svg {
                             color: variables.$link-text-color-inactive;
                         }
@@ -45,12 +49,12 @@ section.skills {
                         .skill-heading {
                             h4 {
                                 color: rgba(0,0,0,0.7);
-                                font-weight: 500;
+                                font-weight: 700;
                             }
 
                             h6 {
                                 color: variables.$link-text-color-inactive;
-                                font-weight: 400;
+                                font-weight: 500;
                             }
                         }
                     }
@@ -66,13 +70,12 @@ section.skills {
                             align-items: center;
 
                             h4 {
-                                font-size: 1rem;
+                                font-size: 0.8rem;
                                 font-weight: 500;
                             }
 
                             .rating {
                                 font-size: 0.8rem;
-
                             }
                         }
                         .progress {
@@ -105,9 +108,18 @@ section.skills {
         padding: 8rem 2rem;
         .skills-article {
             .carousel-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    section.skills {
+        padding: 8rem 1rem;
+        .skills-article {
+            .carousel-container {
                 grid-template-columns: 1fr;
             }
         }
     }
-    
 }

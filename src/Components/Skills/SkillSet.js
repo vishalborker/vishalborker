@@ -25,8 +25,8 @@ function SkillSet({ skill }) {
                     <h6>More than {experience} years</h6>
                 </div>
             </div>
-            <div className='carousel-button' >
-                <FontAwesomeIcon icon={open ? faAngleUp : faAngleDown } />
+            <div className={`carousel-button ${open ? 'open' : 'close'}`}>
+                <FontAwesomeIcon icon={faAngleUp} />
             </div>
         </div>
 
