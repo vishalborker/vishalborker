@@ -7,19 +7,24 @@ import Instagram from '../images/instagram-circled.png';
 
 
 function Social() {
+
+  const linkedIN = process.env.REACT_APP_LINKED_IN;
+  const instagram = process.env.REACT_APP_INSTAGRAM;
+  const github = process.env.REACT_APP_GITHUB;
+
   const links = [
     {
-      href: "https://www.linkedin.com",
+      href: linkedIN,
       alt: 'LinkedIN',
       src: LinkedIn,
     },
     {
-      href: "https://www.github.com",
+      href: github,
       alt: 'Github',
       src: Github,
     },
     {
-      href: "https://www.instagram.com",
+      href: instagram,
       alt: 'Instagram',
       src: Instagram,
     }

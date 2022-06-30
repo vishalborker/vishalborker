@@ -11,7 +11,6 @@ function NavLinks({ links, onNavigate }) {
       onNavigate(link);
   }
 
-  console.log({active})
   return (
     <div className='links'>
         <ul>

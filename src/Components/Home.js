@@ -5,21 +5,21 @@ import Footer from './Footer';
 import Navbar from './Navbar';
 import Profile from './Profile';
 import Services from './Services/Services';
-import Skills from './Skills/Skills';
+import SkillsContainer from './Skills/SkillsContainer';
 
 
 function Home() {
   useEffect(() => {
     window.scrollTo(0,0);
-  })
+  });
   return (
     <>
       <Navbar />
       <Profile />
-      {/* <Skills /> */}
       <Services />
+      <SkillsContainer />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

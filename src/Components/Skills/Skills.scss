@@ -1,8 +1,8 @@
 @use '../../scss/variables';
 
 section.skills {
-    padding: 9rem 12rem;
-    padding-bottom: 10rem;
+    padding: 8rem 10rem;
+    // padding-bottom: 10rem;
 
     .skills-data {
         display: flex;
@@ -11,34 +11,103 @@ section.skills {
     }
 
     .skills-article {
-        .carousel {
-            .carousel-header {
 
-            }
+        .carousel-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2rem;
 
-            .carousel-body {
-                .skills {
-                    .progress {
-                        position: relative;
-                        width: 100%;
-                        height: 10px;
-                        background-color: variables.$link-text-color-inactive;
-                        border-radius: 25px;
+            .carousel {
+                .carousel-header {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
 
-                        .progress-percentage {
-                            position: absolute;
-                            content: '';
-                            border-radius: 25px;
-                            width: 60%;
-                            background-color: variables.$link-text-color-active;
-                            top: 0;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
+                    .carousel-button {
+                        svg {
+                            color: variables.$link-text-color-inactive;
                         }
                     }
-                }   
+                    .icon-and-heading {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .skill-icon {
+                            margin-right: 1rem;
+                            svg {
+                                color: variables.$link-text-color-inactive;
+                            }
+                        }
+
+                        .skill-heading {
+                            h4 {
+                                color: rgba(0,0,0,0.7);
+                                font-weight: 500;
+                            }
+
+                            h6 {
+                                color: variables.$link-text-color-inactive;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+    
+                .carousel-body {
+                    .skills {
+                        .skill-name {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            margin: 1rem 0rem;
+                            align-items: center;
+
+                            h4 {
+                                font-size: 1rem;
+                                font-weight: 500;
+                            }
+
+                            .rating {
+                                font-size: 0.8rem;
+
+                            }
+                        }
+                        .progress {
+                            position: relative;
+                            width: 100%;
+                            height: 10px;
+                            border-radius: 25px;
+                            background-color: variables.$progress-bar-background;
+    
+                            .progress-percentage {
+                                content: '';
+                                position: absolute;
+                                border-radius: 25px;
+                                background-color: variables.$link-text-color-active;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                            }
+                        }
+                    }   
+                }
             }
         }
     }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1080px) {
+    section.skills {
+        padding: 8rem 2rem;
+        .skills-article {
+            .carousel-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+    
 }

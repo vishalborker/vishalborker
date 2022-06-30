@@ -105,3 +105,9 @@ section.contact {
         }
     }
 }
+
+@media screen and (min-width: 480px) and (max-width: 1080px) {
+    section.contact {
+        padding: 5rem 2rem;
+    }
+}

@@ -1,8 +1,10 @@
 import React from 'react';
 
+import './Footer.scss';
+
 function Footer() {
   return (
-    <footer>
+    <footer className='footer'>
         Copyright @Vishal Borker {new Date().getFullYear()}
     </footer>
   )

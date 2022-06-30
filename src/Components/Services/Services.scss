@@ -4,7 +4,7 @@ section.services {
     padding: 9rem 12rem;
     padding-bottom: 10rem;
     user-select: none;
-    
+
     .services-data {
         display: flex;
         justify-content: space-between;
@@ -88,6 +88,10 @@ section.services {
             }
         }
     }
+}
 
-
+@media screen and (min-width: 480px) and (max-width: 1080px) {
+    section.services {
+        padding: 5rem 2rem;
+    }
 }
