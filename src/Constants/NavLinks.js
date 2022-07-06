@@ -19,8 +19,13 @@ export const LINKS = [{
     class: 'skills',
     order: 4,
   }, {
+    to: '/Portfolio',
+    title: 'Portfolio',
+    class: 'portfolio',
+    order: 5,
+  }, {
     to: '/Contact',
     title: 'Contact',
     class: 'contact',
-    order: 5,
+    order: 6,
 }];
