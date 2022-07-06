@@ -26,7 +26,7 @@ function Intro() {
               </p>
               
               <div className='social'>
-                <Social /> 
+                <Social />
               </div>
 
             </div>

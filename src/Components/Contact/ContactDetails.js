@@ -11,14 +11,14 @@ function ContactDetails() {
             <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
             <div className='phone-no'>
                 <span>Call Me</span>
-                <span>999-777-888</span>
+                <span>820-857-7522</span>
             </div>
         </div>
         <div className='email'>
             <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
             <div className='email-address'>
                 <span>Email</span>
-                <span>abc@xyz.com</span>
+                <span>borkervishal@gmail.com</span>
             </div>
         </div>
         <div className='location'>
