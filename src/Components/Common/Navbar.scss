@@ -1,4 +1,4 @@
-@use '../scss/variables';
+@use '../../scss/variables';
 
 nav {
     &.navigation {
@@ -74,6 +74,14 @@ nav {
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    nav.navigation {
+        .sidebar.close {
+            display: none;
         }
     }
 }

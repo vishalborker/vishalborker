@@ -2,7 +2,7 @@ import React from 'react';
 
 import { faAngleLeft, faAngleRight, faDatabase, faPenRuler, faRightLong } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Header from '../Header';
+import Header from '../Common/Header';
 
 import './Services.scss';
 

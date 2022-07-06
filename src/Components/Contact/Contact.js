@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactDetails from './ContactDetails';
 import ContactForm from './ContactForm';
-import Header from '../Header';
+import Header from '../Common/Header';
 
 import './Contact.scss';
 

@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import Contact from './Contact/Contact';
 
-import Footer from './Footer';
-import Navbar from './Navbar';
-import Profile from './Profile';
+import Footer from './Common/Footer';
+import Navbar from './Common/Navbar';
 import Services from './Services/Services';
 import SkillsContainer from './Skills/SkillsContainer';
+import Profile from './Profile/Profile';
+import Portfolio from './Portfolio/Portfolio';
 
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
       <Profile />
       <Services />
       <SkillsContainer />
+      <Portfolio />
       <Contact />
       <Footer />
     </>

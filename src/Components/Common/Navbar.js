@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 import './Navbar.scss';
 
-import Logo from '../images/vb.png';
+import Logo from '../../images/vb.png';
 import NavLinks from './NavLinks';
-import { LINKS } from '../Constants/NavLinks';
+import { LINKS } from '../../Constants/NavLinks';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Sidebar from './Sidebar';
@@ -17,26 +17,15 @@ function Navbar() {
   const links = LINKS;
   const isMobileScreen = window.innerWidth <= 480;
 
-  const smoothScroll = (width, destinationY, positive) => {
+  const smoothScroll = (width, destinationY) => {
     const isGoingUp = destinationY - window.scrollY < 0;
-    let addOffset = 50;
+    // let addOffset = 50;
     if (isGoingUp < 0) {
-        addOffset = -50
+        // addOffset = -50
     } else {
-        addOffset = 50;
+        // addOffset = 50;
     }
     window.scrollTo(width, destinationY);
-    // console.log({isGoingUp});
-    // const interval = setInterval(() => {
-    //     const nextHeight = window.scrollY + addOffset;
-    //     window.scrollTo(width, nextHeight);
-    //     console.log({destinationY}, {nextHeight})
-    //     if(isGoingUp === false && nextHeight >= destinationY) {
-    //       clearInterval(interval);
-    //     } else if(isGoingUp === true && nextHeight <= destinationY){
-    //       clearInterval(interval);
-    //     }
-    // }, 20);
   }
 
   const onNavigate = (link) => {

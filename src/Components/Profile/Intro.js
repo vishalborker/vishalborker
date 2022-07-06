@@ -1,6 +1,6 @@
 import React from 'react';
 
-import profileImg from '../images/profile-pic.png';
+import profileImg from '../../images/profile-pic.png';
 
 import './Intro.scss';
 import Profession from './Profession';

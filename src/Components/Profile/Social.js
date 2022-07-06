@@ -1,9 +1,9 @@
 import React from 'react';
 import './Social.scss';
 
-import LinkedIn from '../images/linkedin-circled.png';
-import Github from '../images/github-circled.png';
-import Instagram from '../images/instagram-circled.png';
+import LinkedIn from '../../images/linkedin-circled.png';
+import Github from '../../images/github-circled.png';
+import Instagram from '../../images/instagram-circled.png';
 
 
 function Social() {

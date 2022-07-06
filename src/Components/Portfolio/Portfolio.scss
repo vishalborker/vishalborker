@@ -1,0 +1,36 @@
+@use '../../scss/variables';
+
+section.portfolio {
+    padding: 5rem 12rem;
+
+    .portfolio-data {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section.portfolio {
+        padding: 5rem 1rem;
+    
+        .portfolio-article {
+            .header {
+                margin-bottom: 4rem;
+            }
+            .portfolio-data {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1080px) {
+    section.portfolio {
+        padding: 5rem 2rem;
+    }
+}

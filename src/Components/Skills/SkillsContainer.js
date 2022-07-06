@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from '../Header';
+import Header from '../Common/Header';
 import SkillSet from './SkillSet';
 
 import { SKILLS } from '../../Constants/Skills';
