@@ -17,9 +17,9 @@ function Home() {
     <>
       <Navbar />
       <Profile />
+      <Portfolio />
       <Services />
       <SkillsContainer />
-      <Portfolio />
       <Contact />
       <Footer />
     </>

@@ -8,6 +8,10 @@ import countrySearch from '../../images/country-search-ui.PNG';
 import pokedex from '../../images/Pokedex.PNG';
 import shoeStore from '../../images/shoe-store.PNG';
 import clockUi from '../../images/clock-ui.PNG';
+import timeTrackerUI from '../../images/time-tracker-dashboard.PNG';
+import hoverEffect from '../../images/hover-effect.PNG';
+
+
 
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -41,6 +45,14 @@ function Portfolio() {
         link:'https://clock-design-ui.web.app/',
         image: clockUi,
         details: 'Clock UI - HTML5, CSS3, Responsive',
+    }, {
+        link: 'https://time-tracker-design.web.app/',
+        image: timeTrackerUI,
+        details: 'Time Tracker UI - HTML5, CSS3, Responsive',
+    }, {
+        link: 'https://hover-effect-ui.web.app/',
+        image: hoverEffect,
+        details: 'Hover Effect UI - HTML5 canvas, Responsive',
     }
 ];
 
