@@ -9,8 +9,8 @@ export const LINKS = [{
     class: 'about',
     order: 2,
   }, {
-    to: '/Portfolio',
-    title: 'Portfolio',
+    to: '/Projects',
+    title: 'Projects',
     class: 'portfolio',
     order: 3,
   }, {

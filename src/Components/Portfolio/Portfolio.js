@@ -21,7 +21,7 @@ function Portfolio() {
 
     const [ current, setCurrent ] = useState(0);
     const title = {
-        title: 'Portfolio',
+        title: 'Projects',
         subtitle: 'What I have worked on', 
     };
 
@@ -88,7 +88,10 @@ function Portfolio() {
                                         <img src={item.image} alt={item.details} />
                                     </a>
                                 </li>
-                                <p>{item.details}</p>
+                                <div className='portfolio-details'>
+                                    <p>{item.details}</p>
+                                    <a href={item.link} target='_blank' rel='noopener noreferrer' className='demo'>Demo Link</a>
+                                </div>
                             </>
                         )
                     })
