@@ -26,7 +26,7 @@ function Portfolio() {
     };
 
     const data = [{
-        link: 'https://linkedin-clone-ui-react.web.app/login',
+        link: 'https://linkedin-react-web-app.web.app/login',
         image: linkedin,
         details: 'Linkedin Clone App - React, HTML5, CSS3, Redux-saga, Responsive',
     }, {
